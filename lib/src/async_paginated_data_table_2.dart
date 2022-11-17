@@ -350,6 +350,7 @@ class AsyncPaginatedDataTable2 extends PaginatedDataTable2 {
       this.pageSyncApproach = PageSyncApproach.doNothing,
       TableBorder? border,
       bool autoRowsToHeight = false,
+      bool showEmptyRows = false,
       double smRatio = 0.67,
       double lmRatio = 1.2})
       : super(
@@ -377,6 +378,7 @@ class AsyncPaginatedDataTable2 extends PaginatedDataTable2 {
             wrapInCard: wrapInCard,
             minWidth: minWidth,
             fit: fit,
+            showEmptyRows: showEmptyRows,
             hidePaginator: hidePaginator,
             controller: controller,
             scrollController: scrollController,
